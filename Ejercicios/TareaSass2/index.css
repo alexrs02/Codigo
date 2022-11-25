@@ -1,0 +1,18 @@
+section .main h2 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c63;
+  background-color: #eee;
+}
+section .secundary h3 {
+  margin: 0 0 20px 0;
+  font-family: Jubilat, Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #39c;
+  background-color: #333;
+}/*# sourceMappingURL=index.css.map */

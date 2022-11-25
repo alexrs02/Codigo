@@ -1,0 +1,23 @@
+.div1 {
+  font-family: sans-serif;
+  color: red;
+  font-style: italic;
+  font-size: 5rem;
+  background-color: gray;
+}
+
+.div2 {
+  font-family: sans-serif;
+  color: yellow;
+  font-style: bold;
+  font-size: 5rem;
+  background-color: gray;
+}
+
+.div3 {
+  font-family: sans-serif;
+  color: red;
+  font-style: normal;
+  font-size: 5rem;
+  background-color: gray;
+}/*# sourceMappingURL=index.css.map */

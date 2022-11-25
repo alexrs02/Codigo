@@ -1,0 +1,17 @@
+.container1 {
+  display: flex;
+}
+.container1 p {
+  flex-basis: 300px;
+  flex-grow: 1;
+}
+.container1 .menos {
+  flex-grow: 5;
+}
+
+.container2 {
+  display: flex;
+}
+.container2 .especial {
+  flex-basis: 200px;
+}/*# sourceMappingURL=index.css.map */

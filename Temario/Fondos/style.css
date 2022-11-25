@@ -1,0 +1,14 @@
+header{
+    height: 40vh;
+    background-image: url(pr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+}

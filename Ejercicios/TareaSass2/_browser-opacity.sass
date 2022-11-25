@@ -1,0 +1,5 @@
+@use 'sass:math'
+
+@mixin opacity($opacity) 
+    filter: alpha(opacity=#{$opacity})
+    opacity: $opacity * 0.01

@@ -1,0 +1,36 @@
+
+
+
+body
+    margin: 0
+
+.box
+    background-color: red
+    border: 2px solid black
+    height: 8rem
+//    flex-basis: 6rem
+//    flex-grow: 1
+
+//.box2
+//    flex-grow: 3
+
+//.box5
+//    flex-shrink: 5
+
+
+.container
+    //column-width: 20rem
+    //column-gap: 0 
+    //display: flex
+    display: grid
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr
+
+@media screen and (max-width: 900px)
+    .container
+        grid-template-columns: 1fr 2fr 3fr
+
+
+@media screen and (max-width: 600px)
+    .container
+        grid-template-columns: 1fr
+

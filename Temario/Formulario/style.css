@@ -1,0 +1,10 @@
+h1{
+    text-align: center;
+}
+
+form{
+    border: 1px solid gray;
+    border-radius: .25rem;
+    margin: 2rem 20%;
+    padding: 2rem;
+}

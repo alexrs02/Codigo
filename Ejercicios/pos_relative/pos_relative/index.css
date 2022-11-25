@@ -1,0 +1,38 @@
+.box1 {
+  position: relative;
+  z-index: 5;
+}
+
+.box2 {
+  position: relative;
+  left: 5vw;
+  top: -15vh;
+  z-index: 4;
+}
+
+.box3 {
+  position: relative;
+  left: 10vw;
+  top: -30vh;
+  z-index: 3;
+}
+
+.box4 {
+  position: relative;
+  left: 15vw;
+  top: -45vh;
+  z-index: 2;
+}
+
+.box5 {
+  position: relative;
+  left: 20vw;
+  top: -60vh;
+  z-index: 1;
+}
+
+.box6 {
+  position: relative;
+  left: 25vw;
+  top: -75vh;
+}/*# sourceMappingURL=index.css.map */

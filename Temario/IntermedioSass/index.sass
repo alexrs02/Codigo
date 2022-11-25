@@ -1,0 +1,32 @@
+@mixin font-products($color:red, $style:normal)
+    font-family: sans-serif
+    color: $color
+    font-style: $style
+    font-size: 5rem
+    background-color: gray
+
+.div1
+    @include font-products(red, italic)
+
+.div2
+     @include font-products(yellow, bold)
+
+.div3
+     @include font-products()
+
+// %mensaje
+//     border: 2px solid black
+//     height: 10rem
+//     width: 20rem
+
+// .div1
+//     @extend %mensaje
+//     background-color: red
+
+// .div2
+//     @extend %mensaje
+//     background-color: yellow
+
+// .div3
+//     @extend %mensaje
+//     background-color: green

@@ -1,0 +1,68 @@
+@use 'colors'
+@use 'fonts'
+@use 'sizes'
+
+%flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+@mixin button($button-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5), $box-shadow-hover: 0 4px 4px rgba(0, 0, 0, 0.5), $box-shadow-active: 0 2px 2px rgba(0, 0, 0, 0.5), $border-radius:0, $height: 3rem)
+    cursor: pointer
+    border: none
+    height: $height
+    box-shadow: $button-box-shadow
+    border-radius: $border-radius
+
+    &:hover
+        box-shadow: $box-shadow-hover
+    &:active
+        box-shadow: $box-shadow-active 
+
+header
+    @extend %flex-center
+    width: 100vw
+    height: sizes.$header-h
+
+body
+    background-color: colors.$bg-color
+    margin: 0
+
+header
+    background-color: colors.$headfoo-color
+    h1
+       font-family: fonts.$font
+       color: white
+.contenido
+    display: flex
+    flex-direction: row
+
+    .sidebar
+        display: flex
+        flex-direction: column
+        background-color: colors.$navbar-color
+        row-gap: 0.5rem
+        height: sizes.$side-h
+        width: 14rem
+
+        button
+            @include button
+
+.action-button
+    @include button(0 4px 4px rgba(0, 0, 0, 0.5), 0 8px 8px rgba(0, 0, 0, 0.5),0 6px 6px rgba(0, 0, 0, 0.5),4rem,4rem)
+    background-color: colors.$btn-action-color
+    position: fixed
+    bottom: 4.5rem
+    right: 2rem
+    font-size: 2rem
+    width: 4rem
+
+footer
+    @extend %flex-center
+    background-color: colors.$headfoo-color
+    height: sizes.$footer-h
+    width: 100vw
+    p
+        font-family: fonts.$font
+        color: white

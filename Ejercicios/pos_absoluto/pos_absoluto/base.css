@@ -1,0 +1,43 @@
+/*/////////////////////////////////////
+/// ** NO MODIFICAR ESTE ARCHIVO ** ///
+/////////////////////////////////////*/
+
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.parent-box {
+  width: 60vw;
+  height: 60vh;
+  background-color: white;
+}
+
+.box {
+  width: 10vh;
+  height: 10vh;
+  border: 1px solid black;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.green-box {
+  background-color: green;
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.pink-box {
+  background-color: pink;
+}

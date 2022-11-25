@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+footer, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100vw;
+  height: 8rem;
+}
+
+body {
+  background-color: #f7e1d7;
+  margin: 0;
+}
+
+header {
+  background-color: #4a5759;
+}
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: row;
+}
+.contenido .sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #b0c4b1;
+  row-gap: 0.5rem;
+  height: calc(100vh - 2.5rem - 8rem);
+  width: 14rem;
+}
+.contenido .sidebar button {
+  cursor: pointer;
+  border: none;
+  height: 3rem;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+}
+.contenido .sidebar button:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+.contenido .sidebar button:active {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.action-button {
+  cursor: pointer;
+  border: none;
+  height: 4rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 4rem;
+  background-color: #edafb8;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 2rem;
+  font-size: 2rem;
+  width: 4rem;
+}
+.action-button:hover {
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+}
+.action-button:active {
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: #4a5759;
+  height: 2.5rem;
+  width: 100vw;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}/*# sourceMappingURL=index.css.map */

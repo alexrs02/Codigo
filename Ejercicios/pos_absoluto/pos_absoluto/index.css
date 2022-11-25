@@ -1,0 +1,27 @@
+.parent-box {
+  position: absolute;
+}
+
+.green-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.blue-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.pink-box {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.red-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+}/*# sourceMappingURL=index.css.map */

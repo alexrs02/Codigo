@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+
+.box {
+  width: 40vw;
+  height: 30vh;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: purple;
+}
+
+.box3 {
+  background-color: salmon;
+}
+
+.box4 {
+  background-color: blue;
+}
+
+.box5 {
+  background-color: green;
+}
+
+.box6 {
+  background-color: yellow;
+}

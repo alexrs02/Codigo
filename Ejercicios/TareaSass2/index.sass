@@ -1,0 +1,16 @@
+@mixin section($color,$background-color)
+    margin: 0 0 20px 0
+    font-family: Jubilat, Georgia, serif
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+    color: $color
+    background-color: $background-color
+
+section
+    .main
+        h2
+            @include section(#c63,#eee)
+    .secundary
+        h3
+            @include section(#39c,#333)

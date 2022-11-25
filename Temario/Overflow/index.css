@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+.contenedor {
+  background-color: blue;
+  display: flex;
+  width: 40rem;
+  height: 10rem;
+  overflow: auto;
+}
+
+.box {
+  background-color: salmon;
+  border: 2px solid gray;
+  width: 18rem;
+  height: 6rem;
+  flex-shrink: 0;
+}/*# sourceMappingURL=index.css.map */
