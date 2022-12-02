@@ -142,19 +142,18 @@ section {
 
 .table-container {
   width: 70vw;
-  margin: auto;
-  padding: 2rem;
   margin-top: 2rem;
-}
-.table-container table #media-table {
-  display: none;
+  letter-spacing: 2px;
 }
 .table-container table td {
   padding: 1rem;
   text-align: center;
+  color: gray;
+  font-size: 0.8rem;
 }
 .table-container table td i {
   padding: 1rem;
+  color: black;
 }
 .table-container table td img {
   max-width: 100%;
@@ -163,7 +162,19 @@ section {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
 }
 
+.media-table {
+  display: none;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 1100px) {
+  .table-container {
+    width: 100vw !important;
+  }
+  .media-table {
+    color: black !important;
+    display: table-cell !important;
+  }
   .nav-container {
     width: 100vw !important;
     display: flex !important;
@@ -196,13 +207,6 @@ section {
   }
   table th {
     display: none;
-  }
-  #media-table {
-    display: table-row !important;
-  }
-  #media-table td {
-    text-align: center !important;
-    font-size: 4rem !important;
   }
 }
 @media screen and (max-width: 450px) {
