@@ -1,0 +1,104 @@
+@use 'theme'
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap')
+    
+body
+    font-family: 'Montserrat', sans-serif
+    margin: 0
+    display: flex
+    justify-content: center
+
+header
+    background-color: theme.$head-color 
+    height: 11.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    h1
+        text-align: center
+        margin: 0           
+
+        color: white
+        font-size: 3rem
+        font-family: theme.$head-font
+
+nav
+    background-color: theme.$nav-color
+    display: flex 
+    height: 2.5rem
+    align-items: center
+    column-gap: 0.75rem
+    a
+        
+        color: theme.$a-color           
+        text-decoration: none
+
+
+article
+    section
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 1.125rem
+        
+        h1
+            font-size: 1.875rem 
+            margin: 0
+
+        img
+            max-width: 100%            
+table
+    display: flex
+    border-collapse: collapse      
+    overflow: auto
+    width: 100%
+    td, th
+        
+        border: 1px solid black
+
+footer
+    background-color: theme.$footer-color        
+    text-align: center
+    padding: 8px
+
+.container
+    background-color: theme.$body-color
+    width: 50rem
+
+
+
+@media screen and (max-width: 800px)
+    body
+        display: block
+    .container
+        width: 100%
+    nav
+        flex-direction: column
+        //align-items: flex-start
+        height: 40vh 
+        row-gap: 1.5rem
+
+        a
+            display: flex
+            align-items: center
+            flex-grow: 1
+            font-size: 1.5rem
+    table
+        td,th
+            min-width: 200px
+
+
+        
+        
+       
+
+
+
+
+
+/*  Deberíamos hacer uso de media queries para recolocar el nav-menu en pantallas
+    móviles, de modo que se muestren, por ejemplo, la lista de botones en vertical.
+
+    Deberíamos mostrar una versión adaptable de la tabla para que se pueda leer
+    en dispositivos con una pantalla pequeña, por ejemplo, con un display:auto para
+    permitir hacer scroll en tablas largas. */

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: #6096ba;
+  height: 11.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  text-align: center;
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #a3cef1;
+  display: flex;
+  height: 2.5rem;
+  align-items: center;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+nav a {
+  color: #274c77;
+  text-decoration: none;
+}
+
+article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.125rem;
+}
+article section h1 {
+  font-size: 1.875rem;
+  margin: 0;
+}
+article section img {
+  max-width: 100%;
+}
+
+table {
+  display: flex;
+  border-collapse: collapse;
+  overflow: auto;
+  width: 100%;
+}
+table td, table th {
+  border: 1px solid black;
+}
+
+footer {
+  background-color: #6096ba;
+  text-align: center;
+  padding: 8px;
+}
+
+.container {
+  background-color: #e7ecef;
+  width: 50rem;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    display: block;
+  }
+  .container {
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    height: 40vh;
+    row-gap: 1.5rem;
+  }
+  nav a {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 1.5rem;
+  }
+  table td, table th {
+    min-width: 200px;
+  }
+}
+/*  Deberíamos hacer uso de media queries para recolocar el nav-menu en pantallas
+ *  móviles, de modo que se muestren, por ejemplo, la lista de botones en vertical.
+ *
+ *  Deberíamos mostrar una versión adaptable de la tabla para que se pueda leer
+ *  en dispositivos con una pantalla pequeña, por ejemplo, con un display:auto para
+ *  permitir hacer scroll en tablas largas. *//*# sourceMappingURL=index.css.map */
