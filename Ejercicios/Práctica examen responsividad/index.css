@@ -41,7 +41,9 @@ article section {
   align-items: center;
   padding: 1.125rem;
 }
-article section h1 {
+article section div {
+  width: 100%;
+  text-align: left;
   font-size: 1.875rem;
   margin: 0;
 }
@@ -50,9 +52,9 @@ article section img {
 }
 
 table {
-  display: flex;
-  border-collapse: collapse;
   overflow: auto;
+  display: inline-flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 table td, table th {

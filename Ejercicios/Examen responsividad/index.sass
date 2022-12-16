@@ -1,0 +1,84 @@
+@use 'colors'
+@use 'sizes'
+
+$align-center: center
+
+@mixin padding($relleno:2rem)
+    padding: $relleno
+    
+
+*
+    padding: 0
+    margin: 0
+    
+
+
+
+.container
+    
+    margin: 0 auto
+    width: 80%
+    max-width: 1500px
+h2
+    margin: 2rem 0
+
+.productos
+    
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    height: sizes.$productos-height
+    align-items: $align-center
+    justify-items: $align-center
+    
+    img
+        max-width: sizes.$cien
+
+header
+    background-color: colors.$header-color
+    color: white
+    @include padding()
+    font-size: 2rem
+
+nav
+    
+    background-color: colors.$nav-color
+    @include padding(1rem)
+    a
+        @include padding()
+
+article
+    p
+        column-count: 2
+
+table
+    width: 100%
+    display: flex
+    overflow: auto
+    flex: auto
+
+@media screen and (max-width: 800px)
+    .container
+        width: sizes.$cien
+        margin-left: 0
+        margin-right: 0
+    nav
+        display: flex
+        flex-direction: column
+        justify-content: $align-center
+        align-items: $align-center
+        a
+            @include padding(.5rem)
+            border-bottom: 1px solid gray
+
+    .productos
+        grid-template-columns: 1fr 1fr
+    table
+        width: sizes.$cien
+
+    header
+        h1
+            font-size: sizes.$mobile-header-font
+    article
+        p
+            column-count: 1
+       
