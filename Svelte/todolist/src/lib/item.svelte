@@ -1,11 +1,13 @@
 <script>
     export let name = ''
     export let delFn 
+    export let check;
+    export let checkTask
 </script>
 
 <main>
-    <input type="checkbox" name="check" id="check">
-    <h1>{name}</h1>
+    <input on:click={checkTask(check)} type="checkbox" name="check" id="check" bind:checked={check}>
+    <h1 class="{check?'tachado':'normal'}">{name}</h1>
     <button on:click={delFn}>x</button>
 </main>
 
@@ -13,4 +15,12 @@
     main{
         display: flex;
     }           
+
+    .tachado{
+        text-decoration: line-through;
+        color: red;
+    }
+    .normal{
+        text-decoration: none;
+    }
 </style>
