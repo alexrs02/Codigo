@@ -16,9 +16,10 @@
     let textoTarea = "";
 
     class Task {
-        constructor(nombre) {
+        constructor(nombre, important) {
             this.completado = false;
             this.nombre = nombre;
+            this.important = important;
         }
     }
 
@@ -27,28 +28,47 @@
         tareas.push(nuevaTarea);
         textoTarea = "";
         tareas = tareas;
-        saveList()
+        saveList();
     };
 
     const removeTask = (n) => {
         tareas.splice(n, 1);
         tareas = tareas;
-        saveList()
+        saveList();
     };
 
-    const recheckTask = (check,n) => {
-        tareas[n].completado = check
-        console.log(tareas[n])
+    const recheckTask = (check, n) => {
+        tareas[n].completado = check;
+        console.log(tareas[n]);
         tareas = tareas;
-        saveList()
-    }
+        saveList();
+    };
 </script>
 
-<h1>Lista de tareas</h1>
+<main>
+    <h1>Lista de tareas</h1>
 
-<input type="text" name="" id="" bind:value={textoTarea} />
-<button on:click={addTask}>Añadir tarea</button>
+    <div>
+        <input type="text" name="" id="" bind:value={textoTarea} />
+        <button on:click={addTask}>Añadir tarea</button>
+    </div>
 
-{#each tareas as tarea, i}
-    <Item name={tarea.nombre} delFn={() => removeTask(i)} checkTask={(check) => recheckTask(check,i)} check={tarea.completado}/>
-{/each}
+    {#each tareas as tarea, i}
+        <Item
+            name={tarea.nombre}
+            delFn={() => removeTask(i)}
+            checkTask={(check) => recheckTask(check, i)}
+            check={tarea.completado}
+        />
+    {/each}
+</main>
+
+<style>
+    main {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>

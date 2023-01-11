@@ -1,26 +1,36 @@
 <script>
-    export let name = ''
-    export let delFn 
+    export let name = "";
+    export let delFn;
     export let check;
-    export let checkTask
+    export let checkTask;
+    export let important;
 </script>
 
 <main>
-    <input on:click={checkTask(check)} type="checkbox" name="check" id="check" bind:checked={check}>
-    <h1 class="{check?'tachado':'normal'}">{name}</h1>
+    {#if important}
+        <img src="" alt="" />
+    {/if}
+    <input
+        on:click={checkTask(check)}
+        type="checkbox"
+        name="check"
+        id="check"
+        bind:checked={check}
+    />
+    <h1 class={check ? "tachado" : "normal"}>{name}</h1>
     <button on:click={delFn}>x</button>
 </main>
 
 <style>
-    main{
+    main {
         display: flex;
-    }           
+    }
 
-    .tachado{
+    .tachado {
         text-decoration: line-through;
         color: red;
     }
-    .normal{
+    .normal {
         text-decoration: none;
     }
 </style>
